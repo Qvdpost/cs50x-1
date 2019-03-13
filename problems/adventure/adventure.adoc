@@ -601,6 +601,18 @@ You can check your progress in Adventure by runnign the following:
 ```
 check50 --local adventure@minprog/checks
 ```
+You can download a text file to see what commands are used to test if your game is winnable:
+----
+  $ wget https://cs50x.mprog.nl/course/problems/adventure/win.zip
+  $ unzip win.zip
+  $ rm win.zip
+----
+Within the file `win.txt` you'll find all commands seperated by a newline.
+Then you can either run each command manually and see how your program responds, or you can run the following command to automatically test the entire set of commands:
+----
+  $ python adventure.py Crowther < win.txt
+----
+
 
 === `style50`
 ```
